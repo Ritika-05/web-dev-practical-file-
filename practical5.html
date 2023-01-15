@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Image Generator</title>
+    <style>
+      h2 {
+        margin: 15px;
+
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h4 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="color: rgb(95, 37, 242); text-align: center">
+      Random Image Generator
+    </h2>
+
+    <h4 style="text-align: center">
+      Click the button to generate and display random images on the webpage
+    </h4>
+
+    <center><button id="submit">Generate Image</button></center>
+    <br />
+    <br />
+    <center><img src="" alt="" id="pic" /></center>
+  </body>
+</html>
+<script>
+  let arr = [
+    "https://tse4.mm.bing.net/th?id=OIP.Ad86vePBkyH5T4G6LrsWqAHaEK&pid=Api&P=0",
+    "https://tse2.mm.bing.net/th?id=OIP.kDwlp5Qv9A6obSmi9NIMzQHaDt&pid=Api&P=0",
+    "https://tse3.mm.bing.net/th?id=OIP.phvo0OB0SkW2FcC9Z0qQDgHaEK&pid=Api&P=0",
+    "https://tse2.mm.bing.net/th?id=OIP.3o_NFjUbIbFxR60krou6wQHaEK&pid=Api&P=0",
+    "https://tse3.mm.bing.net/th?id=OIP.0ZmBU2go-B642jzvDWXkSQHaEK&pid=Api&P=0",
+  ];
+
+  document.getElementById("submit").addEventListener("click", function () {
+    let index = Math.floor(Math.random() * arr.length);
+    document.getElementById("pic").setAttribute("src", arr[index]);
+  });
+</script>

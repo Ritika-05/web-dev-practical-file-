@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="practical7.xsl"?>
+<BankAccountDetails>
+	<account>
+		<accountNo>
+			12345
+		</accountNo>
+		<accountType>
+			business
+		</accountType>
+		<balance>
+			1,23,456
+		</balance>
+		<customer_id>
+			9999
+		</customer_id>
+		<customer_name>
+			lisa
+		</customer_name>
+	</account>
+	<account>
+		<accountNo>
+			09876
+		</accountNo>
+		<accountType>
+			resident
+		</accountType>
+		<balance>
+			11,333
+		</balance>
+		<customer_id>
+			8888
+		</customer_id>
+		<customer_name>
+			jacson
+		</customer_name>
+	</account>
+	<account>
+		<accountNo>
+			89234
+		</accountNo>
+		<accountType>
+			commercial
+		</accountType>
+		<balance>
+			89,99
+		</balance>
+		<customer_id>
+			7777
+		</customer_id>
+		<customer_name>
+			peter
+		</customer_name>
+	</account>
+</BankAccountDetails>

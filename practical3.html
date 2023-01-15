@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css positioning</title>
+    <style>
+        div{
+            border: 2px, solid, black;
+        }
+        .top-container{
+            background-color: rgb(245, 241, 236);
+            height: 200px;
+            width: 500px;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            z-index: 1;
+            border: 2px solid black;
+            text-align: center;
+        }
+        .middle-container{
+            background-color: rgb(245, 249, 249);
+            height: 200px;
+            width: 500px;
+            position: absolute;
+            left: 270px; ;
+            top:170px ;
+            z-index: 2;
+            border: 2px solid black;
+            text-align:center;
+
+        }
+        .bottom-container{
+            background-color: rgb(235, 244, 244);
+            height: 200px;
+            width: 500px;
+            position: absolute;
+            left: 580px;
+            top: 350px;
+            z-index: 1;
+            border: 2px solid black;
+            text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    <div class="top-container">
+        <h3>Properties</h3>
+        <ul>
+            <li>Background properties</li>
+            <li>outline properties</li>
+            <li>link properties</li>
+            <li>list properties</li>
+            <li>tables properties</li>
+        </ul>
+    </div>
+    <div class="middle-container">
+        <h3>Generating content</h3>
+        <ul>
+            <li>Before pseudo-element</li>
+            <li>After pseudo-element</li>
+        </ul>
+    </div>
+    <div class="bottom-container">
+        <h3>Positioning</h3>
+        <ul>
+            <li>
+                Normal flow
+            </li>
+            <li>
+                Absolute positioning
+            </li>
+            <li>
+                Floating positioning
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
